@@ -1,0 +1,15 @@
+[project]
+name = "rmsa"
+version = "0.1.0"
+description = "rmsa"
+readme = "README.md"
+requires-python = ">=3.8, <4.0"
+
+[tool.nonebot]
+adapters = [
+    { name = "OneBot V12", module_name = "nonebot.adapters.onebot.v12" },
+    { name = "Console", module_name = "nonebot.adapters.console" }
+]
+plugins = []
+plugin_dirs = ["plugins"]
+builtin_plugins = ["echo"]
